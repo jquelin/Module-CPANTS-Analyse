@@ -1,6 +1,9 @@
-package Module::CPANTS::Kwalitee::Uses;
 use warnings;
 use strict;
+
+package Module::CPANTS::Kwalitee::Uses;
+# ABSTRACT: Checks which modules are used
+
 use File::Spec::Functions qw(catfile);
 use Module::ExtractUse;
 use Data::Dumper;
@@ -158,15 +161,9 @@ __END__
 
 =pod
 
-=head1 NAME
-
-Module::CPANTS::Kwalitee::Uses - Checks which modules are used
-
-=head1 SYNOPSIS
+=head1 DESCRIPTION
 
 Check which modules are actually used in the code.
-
-=head1 DESCRIPTION
 
 =head2 Methods
 
@@ -196,20 +193,6 @@ Returns the Kwalitee Indicators datastructure.
 
 =back
 
-=head1 SEE ALSO
-
-L<Module::CPANTS::Analyse>
-
-=head1 AUTHOR
-
-Thomas Klausner, <domm@cpan.org>, http://domm.zsi.at
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright (C) 2003-2006, 2009  Thomas Klausner
-
-You may use and distribute this module according to the same terms
-that Perl is distributed under.
 
 =cut
 

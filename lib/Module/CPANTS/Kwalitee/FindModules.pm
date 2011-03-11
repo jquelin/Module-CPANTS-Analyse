@@ -1,6 +1,9 @@
-package Module::CPANTS::Kwalitee::FindModules;
 use warnings;
 use strict;
+
+package Module::CPANTS::Kwalitee::FindModules;
+# ABSTRACT: Find modules provided by a dist
+
 use Data::Dumper;
 use File::Spec::Functions;
 sub order { 30 }
@@ -128,15 +131,9 @@ __END__
 
 =pod
 
-=head1 NAME
-
-Module::CPANTS::Kwalitee::FindModules - Find modules provided by a dist
-
-=head1 SYNOPSIS
+=head1 DESCRIPTION
 
 Finds and reports all modules (i.e. F<*.pm> files) in a distribution.
-
-=head1 DESCRIPTION
 
 =head2 Methods
 
@@ -160,19 +157,5 @@ Returns the Kwalitee Indicators datastructure.
 
 =back
 
-=head1 SEE ALSO
-
-L<Module::CPANTS::Analyse>
-
-=head1 AUTHOR
-
-Thomas Klausner, <domm@cpan.org>, http://domm.zsi.at
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright (C) 2003-2006, 2009  Thomas Klausner
-
-You may use and distribute this module according to the same terms
-that Perl is distributed under.
 
 =cut

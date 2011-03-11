@@ -1,6 +1,9 @@
-package Module::CPANTS::Kwalitee::Distros;
 use warnings;
 use strict;
+
+package Module::CPANTS::Kwalitee::Distros;
+# ABSTRACT: Information retrieved from the various Linux and other distributions
+
 #use File::Spec::Functions qw(catfile);
 #use List::MoreUtils qw(all any);
 use LWP::Simple qw(mirror);
@@ -165,15 +168,9 @@ __END__
 
 =pod
 
-=head1 NAME
-
-Module::CPANTS::Kwalitee::Distros - Information retrieved from the various Linux and other distributions
-
-=head1 SYNOPSIS
+=head1 DESCRIPTION
 
 The metrics here are based on data provided by the various downstream packaging systems.
-
-=head1 DESCRIPTION
 
 =head2 Methods
 
@@ -238,23 +235,5 @@ Public SVN repository: http://svn.debian.org/wsvn/pkg-perl/trunk/$pkg
 
 From that last URL, you might be interested in the debian/ and
 debian/patches subdirectories.
-
-=head1 SEE ALSO
-
-L<Module::CPANTS::Analyse>
-
-=head1 AUTHOR
-
-Thomas Klausner, <domm@cpan.org>, http://domm.zsi.at
-and Gabor Szabo, <gabor@pti.co.il>, http://www.szabgab.com
-with the help of Martín Ferrari and the Debian Perl packaging team.
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright (C) 2003-2009  Thomas Klausner
-Copyright (C) 2006-2008  Gabor Szabo
-
-You may use and distribute this module according to the same terms
-that Perl is distributed under.
 
 =cut

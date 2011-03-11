@@ -1,6 +1,9 @@
-package Module::CPANTS::Kwalitee::Repackageable;
 use warnings;
 use strict;
+
+package Module::CPANTS::Kwalitee::Repackageable;
+# ABSTRACT: Checks for various signs that make a module packageable
+
 use File::Spec::Functions qw(catfile);
 use List::MoreUtils qw(all any);
 #use  Pod::Simple::TextContent;
@@ -72,15 +75,9 @@ __END__
 
 =pod
 
-=head1 NAME
-
-Module::CPANTS::Kwalitee::Repackageable - Checks for various signs that make a module packageable
-
-=head1 SYNOPSIS
+=head1 DESCRIPTION
 
 There are several agregate metrics in here.
-
-=head1 DESCRIPTION
 
 =head2 Methods
 
@@ -102,21 +99,5 @@ Returns the Kwalitee Indicators datastructure.
 
 =back
 
-=head1 SEE ALSO
-
-L<Module::CPANTS::Analyse>
-
-=head1 AUTHOR
-
-Thomas Klausner, <domm@cpan.org>, http://domm.zsi.at
-and Gabor Szabo, <gabor@pti.co.il>, http://www.szabgab.com
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright (C) 2003-2009  Thomas Klausner
-Copyright (C) 2006-2008  Gabor Szabo
-
-You may use and distribute this module according to the same terms
-that Perl is distributed under.
 
 =cut

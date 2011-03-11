@@ -1,6 +1,9 @@
-package Module::CPANTS::Kwalitee::MetaYML;
 use warnings;
 use strict;
+
+package Module::CPANTS::Kwalitee::MetaYML;
+# ABSTRACT: Checks data availabe in META.yml
+
 use File::Spec::Functions qw(catfile);
 use YAML::Syck qw(Load LoadFile);
 use Test::YAML::Meta::Version;
@@ -173,15 +176,9 @@ __END__
 
 =pod
 
-=head1 NAME
-
-Module::CPANTS::Kwalitee::MetaYML - Checks data availabe in META.yml
-
-=head1 SYNOPSIS
+=head1 DESCRIPTION
 
 Checks various pieces of information in META.yml
-
-=head1 DESCRIPTION
 
 =head2 Methods
 
@@ -220,22 +217,5 @@ Returns the Kwalitee Indicators datastructure.
     check_spec_conformance($d,$version);
 
 Validates META.yml using Test::YAML::Meta.
-
-=head1 SEE ALSO
-
-L<Module::CPANTS::Analyse>
-
-=head1 AUTHOR
-
-Thomas Klausner, <domm@cpan.org>, http://domm.zsi.at
-and Gabor Szabo, <gabor@pti.co.il>, http://www.szabgab.com
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright (C) 2003-2009  Thomas Klausner
-Copyright (C) 2006-2008  Gabor Szabo
-
-You may use and distribute this module according to the same terms
-that Perl is distributed under.
 
 =cut

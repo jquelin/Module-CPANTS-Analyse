@@ -1,6 +1,9 @@
-package Module::CPANTS::Kwalitee::License;
 use warnings;
 use strict;
+
+package Module::CPANTS::Kwalitee::License;
+# ABSTRACT: Checks if there is a license
+
 use File::Spec::Functions qw(catfile);
 use Pod::Simple::TextContent;
 use List::MoreUtils qw(all any);
@@ -131,15 +134,9 @@ __END__
 
 =pod
 
-=head1 NAME
-
-Module::CPANTS::Kwalitee::License - Checks if there is a license
-
-=head1 SYNOPSIS
+=head1 DESCRIPTION
 
 Checks if the disttribution specifies a license.
-
-=head1 DESCRIPTION
 
 =head2 Methods
 
@@ -187,22 +184,5 @@ Has license or copyright entry in pod (that might not be recognized by Software:
 
 =cut
 
-
-=head1 SEE ALSO
-
-L<Module::CPANTS::Analyse>
-
-=head1 AUTHOR
-
-Thomas Klausner, <domm@cpan.org>, http://domm.zsi.at
-and Gabor Szabo, <gabor@pti.co.il>, http://www.szabgab.com
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright (C) 2003-2009  Thomas Klausner
-Copyright (C) 2006-2008  Gabor Szabo
-
-You may use and distribute this module according to the same terms
-that Perl is distributed under.
 
 =cut

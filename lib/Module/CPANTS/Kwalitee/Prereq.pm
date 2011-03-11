@@ -1,6 +1,9 @@
-package Module::CPANTS::Kwalitee::Prereq;
 use warnings;
 use strict;
+
+package Module::CPANTS::Kwalitee::Prereq;
+# ABSTRACT: Checks listed prerequistes
+
 use File::Spec::Functions qw(catfile);
 
 sub order { 100 }
@@ -146,15 +149,9 @@ __END__
 
 =pod
 
-=head1 NAME
-
-Module::CPANTS::Kwalitee::Prereq - Checks listed prerequistes
-
-=head1 SYNOPSIS
+=head1 DESCRIPTION
 
 Checks which other dists a dist declares as requirements.
-
-=head1 DESCRIPTION
 
 =head2 Methods
 
@@ -178,19 +175,5 @@ Returns the Kwalitee Indicators datastructure.
 
 =back
 
-=head1 SEE ALSO
-
-L<Module::CPANTS::Analyse>
-
-=head1 AUTHOR
-
-Thomas Klausner, <domm@cpan.org>, http://domm.zsi.at
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright (C) 2003-2006, 2009  Thomas Klausner
-
-You may use and distribute this module according to the same terms
-that Perl is distributed under.
 
 =cut

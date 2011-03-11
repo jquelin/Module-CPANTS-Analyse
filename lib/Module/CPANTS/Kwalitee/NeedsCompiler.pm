@@ -1,6 +1,8 @@
-package Module::CPANTS::Kwalitee::NeedsCompiler;
 use warnings;
 use strict;
+
+package Module::CPANTS::Kwalitee::NeedsCompiler;
+# ABSTRACT: Checks if the module needs a (probably C) compiler
 
 sub order { 200 }
 
@@ -49,15 +51,9 @@ __END__
 
 =pod
 
-=head1 NAME
-
-Module::CPANTS::Kwalitee::NeedsCompiler - Checks if the module needs a (probably C) compiler
-
-=head1 SYNOPSIS
+=head1 DESCRIPTION
 
 Checks if there is some indication in the module that it needs a C compiler to build and install
-
-=head1 DESCRIPTION
 
 =head2 Methods
 
@@ -87,20 +83,5 @@ as they need it for their full functionality and speed.
 =head3 kwalitee_indicators
 
 No Kwalitee Indicator.
-
-=head1 SEE ALSO
-
-L<Module::CPANTS::Analyse>
-
-=head1 AUTHOR
-
-Gabor Szabo <gabor@pti.co.il> http://www.pti.co.il
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright (C) 2006-2008  Gabor Szabo
-
-You may use and distribute this module according to the same terms
-that Perl is distributed under.
 
 =cut

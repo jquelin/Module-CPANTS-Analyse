@@ -1,10 +1,15 @@
-Build.bat
-Build
-Makefile.PL
-_build
-Module-CPANTS-Analyse-*
-Debian_CPANTS.txt
-Debian_CPANTS.txt-*
-blib
+# avoid temp and backup files
+*~
+*#
+*.bak
+*.old
+*.rej
+*.swp
 *.tmp
 
+# avoid utility files
+.build
+_build
+
+# avoid archives of this distribution
+Module-CPANTS-Analyse-*

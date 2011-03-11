@@ -1,6 +1,9 @@
-package Module::CPANTS::Kwalitee::Version;
 use warnings;
 use strict;
+
+package Module::CPANTS::Kwalitee::Version;
+# ABSTRACT: Check for various files
+
 use File::Find;
 use File::Spec::Functions qw(catdir catfile abs2rel splitdir);
 use File::stat;
@@ -83,15 +86,9 @@ __END__
 
 =pod
 
-=head1 NAME
-
-Module::CPANTS::Kwalitee::Files - Check for various files
-
-=head1 SYNOPSIS
+=head1 DESCRIPTION
 
 Find various files and directories that should be part of every self-respecting distribution.
-
-=head1 DESCRIPTION
 
 =head2 Methods
 

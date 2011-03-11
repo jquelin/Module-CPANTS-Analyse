@@ -1,7 +1,10 @@
-package Module::CPANTS::Analyse;
 use 5.006;
 use strict;
 use warnings;
+
+package Module::CPANTS::Analyse;
+# ABSTRACT: Generate Kwalitee ratings for a distribution
+
 use base qw(Class::Accessor);
 use File::Temp qw(tempdir);
 use File::Spec::Functions qw(catfile catdir splitpath);
@@ -12,8 +15,6 @@ use Module::CPANTS::Kwalitee;
 use IO::Capture::Stdout;
 use IO::Capture::Stderr;
 use YAML::Syck qw(LoadFile);
-
-use version; our $VERSION=version->new('0.85');
 
 # setup logger
 if (! main->can('logger')) {
@@ -159,10 +160,6 @@ __END__
 
 =pod
 
-=head1 NAME
-
-Module::CPANTS::Analyse - Generate Kwalitee ratings for a distribution
-
 =head1 SYNOPSIS
 
     use Module::CPANTS::Analyse;
@@ -217,9 +214,11 @@ Returns the filename of the tarball.
 
 Reads the META.yml file and returns its content.
 
-=head1 WEBSITE
+=head1 
 
-http://cpants.perl.org/
+=head1 SEE ALSO
+
+L<http://cpants.perl.org/>
 
 =head1 BUGS
 
@@ -229,23 +228,10 @@ http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Module-CPANTS-Analyse.
 I will be notified, and then you'll automatically be notified of progress
 on your bug as I make changes.
 
-=head1 AUTHOR
-
-Thomas Klausner, <domm@cpan.org>, http://domm.zsi.at
-
-Please use the perl-qa mailing list for discussing all things CPANTS:
-http://lists.perl.org/showlist.cgi?name=perl-qa
+=head1 ACKNOWLEDGEMENTS
 
 Based on work by Leon Brocard <acme@astray.com> and the original idea
 proposed by Michael G. Schwern <schwern@pobox.com>
-
-=head1 LICENSE
-
-This code is Copyright (c) 2003-2006 Thomas Klausner.
-All rights reserved.
-
-You may use and distribute this module according to the same terms
-that Perl is distributed under.
 
 =cut
 

@@ -1,5 +1,10 @@
 #!/usr/bin/perl -w
+
 use strict;
+
+package main;
+# ABSTRACT: commandline frontend to Module::CPANTS::Analyse
+
 
 use Module::CPANTS::Analyse;
 use Getopt::Long;
@@ -135,7 +140,7 @@ __END__
 
 =head1 NAME
 
-cpants_lint.pl - commandline frontend to Module::CPANTS::Analyse
+cpants_lint.pl - 
 
 =head1 SYNOPSIS
 

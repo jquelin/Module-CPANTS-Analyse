@@ -1,7 +1,10 @@
-package Module::CPANTS::Kwalitee;
 use 5.006;
 use strict;
 use warnings;
+
+package Module::CPANTS::Kwalitee;
+# ABSTRACT: Interface to Kwalitee generators
+
 use base qw(Class::Accessor);
 use Module::Pluggable search_path=>['Module::CPANTS::Kwalitee'];
 use Carp;
@@ -127,10 +130,6 @@ __END__
 
 =pod
 
-=head1 NAME
-
-Module::CPANTS::Kwalitee - Interface to Kwalitee generators
-
 =head1 SYNOPSIS
 
   my $mck=Module::CPANTS::Kwalitee->new;
@@ -174,20 +173,6 @@ Get the number of available kwalitee points
 
 Get the total number of kwalitee points. This is bigger the available_kwalitee as some kwalitee metrics are marked as 'extra' (eg is_prereq).
 
-=head1 SEE ALSO
-
-L<Module::CPANTS::Analyse>
-
-=head1 AUTHOR
-
-Thomas Klausner, <domm@cpan.org>, http://domm.zsi.at
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright (C) 2003-2006, 2009  Thomas Klausner
-
-You may use and distribute this module according to the same terms
-that Perl is distributed under.
 
 =cut
 

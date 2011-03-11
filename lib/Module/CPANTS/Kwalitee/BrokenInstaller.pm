@@ -1,6 +1,9 @@
-package Module::CPANTS::Kwalitee::BrokenInstaller;
 use warnings;
 use strict;
+
+package Module::CPANTS::Kwalitee::BrokenInstaller;
+# ABSTRACT: Check for broken Module::Install
+
 use File::Find;
 use File::Spec::Functions qw(catdir catfile abs2rel);
 use File::stat;
@@ -76,21 +79,15 @@ sub kwalitee_indicators {
 }
 
 
-1
+1;
 
 __END__
 
 =pod
 
-=head1 NAME
-
-Module::CPANTS::Kwalitee::BrokenInstaller - Check for broken Module::Install
-
-=head1 SYNOPSIS
+=head1 DESCRIPTION
 
 Find out whether the distribution uses an outdaten version of Module::Install.
-
-=head1 DESCRIPTION
 
 =head2 Methods
 
@@ -119,23 +116,7 @@ Returns the Kwalitee Indicators datastructure.
 
 =back
 
-=head1 SEE ALSO
 
-L<Module::CPANTS::Analyse>
-
-=head1 AUTHOR
-
-Steffen Müller, <smueller@cpan.org>, http://steffen-mueller.net
-
-Thomas Klausner, <domm@cpan.org>, http://domm.zsi.at
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright (C) 2003-2009  Thomas Klausner
-Copyright (C) 2006  Steffen Müller
-
-You may use and distribute this module according to the same terms
-that Perl is distributed under.
 
 =cut
 

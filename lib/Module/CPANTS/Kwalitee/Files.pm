@@ -1,6 +1,9 @@
-package Module::CPANTS::Kwalitee::Files;
 use warnings;
 use strict;
+
+package Module::CPANTS::Kwalitee::Files;
+# ABSTRACT: Check for various files
+
 use File::Find::Rule;
 use File::Spec::Functions qw(catdir catfile abs2rel splitdir);
 use File::stat;
@@ -315,15 +318,9 @@ __END__
 
 =pod
 
-=head1 NAME
-
-Module::CPANTS::Kwalitee::Files - Check for various files
-
-=head1 SYNOPSIS
+=head1 DESCRIPTION
 
 Find various files and directories that should be part of every self-respecting distribution.
-
-=head1 DESCRIPTION
 
 =head2 Methods
 
@@ -382,20 +379,5 @@ Returns the Kwalitee Indicators datastructure.
 =item * no_stdin_for_prompting
 
 =back
-
-=head1 SEE ALSO
-
-L<Module::CPANTS::Analyse>
-
-=head1 AUTHOR
-
-Thomas Klausner, <domm@cpan.org>, http://domm.zsi.at
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright (C) 2003-2006, 2009  Thomas Klausner
-
-You may use and distribute this module according to the same terms
-that Perl is distributed under.
 
 =cut

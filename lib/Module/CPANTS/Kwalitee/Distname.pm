@@ -1,6 +1,9 @@
-package Module::CPANTS::Kwalitee::Distname;
 use warnings;
 use strict;
+
+package Module::CPANTS::Kwalitee::Distname;
+# ABSTRACT: Proper Distname layout
+
 use CPAN::DistnameInfo;
 
 sub order { 15 }
@@ -78,17 +81,11 @@ __END__
 
 =pod
 
-=head1 NAME
-
-Module::CPANTS::Kwalitee::Distname - Proper Distname layout
-
-=head1 SYNOPSIS
+=head1 DESCRIPTION
 
 Checks if a distname is well-formed.
 
 A wellformed distname looks like C<Foo-Bar-1.42.tgz>
-
-=head1 DESCRIPTION
 
 =head2 Methods
 
@@ -114,19 +111,5 @@ Returns the Kwalitee Indicators datastructure.
 
 =back
 
-=head1 SEE ALSO
-
-L<Module::CPANTS::Analyse>
-
-=head1 AUTHOR
-
-Thomas Klausner, <domm@cpan.org>, http://domm.zsi.at
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright (C) 2003-2006, 2009  Thomas Klausner
-
-You may use and distribute this module according to the same terms
-that Perl is distributed under.
 
 =cut

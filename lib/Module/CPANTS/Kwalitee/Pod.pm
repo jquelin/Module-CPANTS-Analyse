@@ -1,6 +1,9 @@
-package Module::CPANTS::Kwalitee::Pod;
 use warnings;
 use strict;
+
+package Module::CPANTS::Kwalitee::Pod;
+# ABSTRACT: Check Pod
+
 use Pod::Simple::Checker;
 use File::Spec::Functions qw(catfile);
 
@@ -66,15 +69,9 @@ __END__
 
 =pod
 
-=head1 NAME
-
-Module::CPANTS::Kwalitee::Pod - Check Pod
-
-=head1 SYNOPSIS
+=head1 DESCRIPTION
 
 Check if the POD of a dist is syntactically correct.
-
-=head1 DESCRIPTION
 
 =head2 Methods
 
@@ -99,20 +96,5 @@ Returns the Kwalitee Indicators datastructure.
 =item * no_pod_errors
 
 =back
-
-=head1 SEE ALSO
-
-L<Module::CPANTS::Analyse>
-
-=head1 AUTHOR
-
-Thomas Klausner, <domm@cpan.org>, http://domm.zsi.at
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright (C) 2003-2006, 2009  Thomas Klausner
-
-You may use and distribute this module according to the same terms
-that Perl is distributed under.
 
 =cut
