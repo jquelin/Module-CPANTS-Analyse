@@ -6,6 +6,7 @@
     WARNING:
     - no more makefile.pl provided, only build.pl
     MISC:
+    - fix rt#65903 - no more Test::YAML::Meta::Version on CPAN
     - migrated to dist-zilla
 
 0.85    2009-07-12, Alexandr Ciornii
